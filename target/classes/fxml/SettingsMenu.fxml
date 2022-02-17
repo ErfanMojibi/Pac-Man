@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.SettingsView">
+    <children>
+        <Button layoutX="73.0" layoutY="251.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="115.0" text="Maps" onAction="#openMapsMenu">
+            <font>
+                <Font name="Cambria" size="12.0"/>
+            </font>
+        </Button>
+        <Button layoutX="40.0" layoutY="55.0" mnemonicParsing="false" onAction="#backToMain" prefHeight="26.0"
+                prefWidth="65.0" text="Back">
+            <font>
+                <Font name="Cambria" size="12.0"/>
+            </font>
+        </Button>
+        <ProgressBar fx:id="pacmanHealth" layoutX="73.0" layoutY="356.0" prefWidth="200.0" progress="0.0"/>
+        <Button layoutX="297.0" layoutY="352.0" mnemonicParsing="false" onAction="#increaseHealth" prefHeight="26.0"
+                prefWidth="31.0" text="+">
+            <font>
+                <Font name="Cambria" size="12.0"/>
+            </font>
+        </Button>
+        <Button layoutX="350.0" layoutY="352.0" mnemonicParsing="false" onAction="#decreaseHealth" prefHeight="26.0"
+                prefWidth="31.0" text="-">
+            <font>
+                <Font name="Cambria" size="12.0"/>
+            </font>
+        </Button>
+        <Label fx:id="label" layoutX="73.0" layoutY="313.0" prefHeight="18.0" prefWidth="137.0"
+               text="Pac-Man Health : ">
+            <font>
+                <Font name="Cambria" size="12.0"/>
+            </font>
+        </Label>
+
+        <Label layoutX="526.0" layoutY="147.0" prefHeight="18.0" prefWidth="173.0" text="Settings" id="title"/>
+    </children>
+    <stylesheets>
+        <URL value="@../CSS/SettingsMenu.css"/>
+    </stylesheets>
+</AnchorPane>

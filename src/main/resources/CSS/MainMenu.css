@@ -1,0 +1,26 @@
+.root {
+    -fx-pref-height: 590.85;
+    -fx-pref-width: 803.4;
+    -fx-background-image: url(../pics/MainBackground.jpg);
+    -fx-background-size: cover;
+}
+.button{
+    -fx-text-fill: black;
+    -fx-background-color: yellow;
+    -fx-text-alignment: center;
+    -fx-position-shape: relative;
+}
+.button:pressed{
+    -fx-translate-y: +2;
+}
+.button:hover{
+    -fx-background-color: #fffd63;
+}
+#title{
+    -fx-text-fill: yellow;
+    -fx-font-size: 24;
+    -fx-font-weight: bold;
+}
+#soundButton{
+    -fx-background-radius: 70;
+}

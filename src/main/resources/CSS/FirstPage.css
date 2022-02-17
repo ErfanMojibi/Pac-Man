@@ -1,0 +1,55 @@
+.root {
+    -fx-pref-height: 590.85;
+    -fx-pref-width: 803.4;
+    -fx-background-image: url(../pics/FirstPage.jpg);
+    -fx-background-size: cover;
+}
+
+.label {
+    -fx-text-fill: black;
+    -fx-background-size: 16;
+    -fx-font-weight: bold;
+}
+
+#title {
+    -fx-text-fill: yellow;
+    -fx-font-size: 24;
+    -fx-font-weight: bold;
+}
+
+.field {
+    -fx-border-color: black;
+    -fx-font-weight: bold;
+}
+
+#loginButton {
+    -fx-text-fill: yellow;
+    -fx-background-color: black;
+    -fx-text-alignment: center;
+    -fx-position-shape: relative;
+}
+
+#signUpButton {
+    -fx-text-fill: black;
+    -fx-background-color: yellow;
+    -fx-text-alignment: center;
+    -fx-position-shape: relative;
+
+    /*-fx-effect: dropshadow(gaussian, #f1f191, 3.0, 1, 0,0);*/
+}
+
+#loginButton:pressed {
+    -fx-translate-y: +2;
+}
+
+#loginButton:hover {
+    -fx-background-color: #4c4c4c;
+}
+
+#signUpButton:pressed {
+    -fx-translate-y: +2;
+}
+
+#signUpButton:hover {
+    -fx-background-color: #fffd63;
+}
